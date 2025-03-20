@@ -1,0 +1,7 @@
+header.cover > div {
+  min-height: 50vh !important;
+}
+
+div.bg-black-60 {
+  background-color: transparent !important;
+}

@@ -1,0 +1,17 @@
+baseURL = 'https://hongyimoviolin.com/'
+languageCode = 'en-us'
+title = 'Hongyi Mo - Violinist'
+theme = 'ananke'
+
+[sitemap]
+changefreq = "daily"
+priority = 0.5
+filename = "sitemap.xml"
+
+[params]
+background_color_class = "bg-green"
+cover_dimming_class = "does-not-exist"
+custom_css = ["index.css"]
+
+[markup.goldmark.renderer]
+unsafe = true
