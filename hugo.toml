@@ -2,6 +2,7 @@ baseURL = 'https://hongyimoviolin.com/'
 languageCode = 'en-us'
 title = 'Hongyi Mo - Violinist'
 theme = 'ananke'
+disableKinds = ["taxonomy", "RSS"]
 
 [sitemap]
 changefreq = "daily"
