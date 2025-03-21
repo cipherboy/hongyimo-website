@@ -29,14 +29,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4.1.7
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@latest
       - id: test-index
         name: Test Index
         run: |
-          echo '<!DOCTYPE html><html><title>Hongyi Mo - Violin</title></head><body><h1>Under construction!</h1></body></html>' > index.html
+          hugo build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: "./"
+          path: "./public"
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
