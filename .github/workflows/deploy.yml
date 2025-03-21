@@ -29,10 +29,9 @@ jobs:
       - uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4.1.7
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
-      - id: test-index
-        name: Test Index
+      - name: Build Hugo
         run: |
-          hugo build
+          hugo build --logLevel debug --ignoreCache --baseURL hongyimoviolin.com
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
