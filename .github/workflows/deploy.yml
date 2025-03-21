@@ -27,11 +27,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          submodules: recursive
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
       - name: Build Hugo
         run: |
-          ls -ahlR
+          ls -lhR
           hugo build --logLevel debug --ignoreCache --baseURL hongyimoviolin.com
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
