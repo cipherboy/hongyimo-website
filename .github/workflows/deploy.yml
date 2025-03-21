@@ -36,7 +36,7 @@ jobs:
       - name: Build Hugo
         run: |
           ls -lhR
-          hugo build --logLevel debug --ignoreCache --baseURL hongyimoviolin.com
+          hugo build --logLevel debug --ignoreCache
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
