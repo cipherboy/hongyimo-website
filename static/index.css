@@ -37,3 +37,8 @@ footer > div > a.dn {
 	text-align: justify !important;
   }
 }
+
+span.text-left {
+  text-align: left !important;
+  display: inline-block;
+}
