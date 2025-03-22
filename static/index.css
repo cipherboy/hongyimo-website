@@ -9,3 +9,17 @@ div.bg-black-60 {
 .measure-wide {
 	max-width: 45em !important;
 }
+
+footer > div > a.dn {
+  display: inline-block;
+}
+
+@media screen and (max-width: 30em) {
+  header.cover > div.does-not-exist > div.ph3 > h1.f2 {
+	display: none;
+  }
+
+  header.cover > div.does-not-exist > nav {
+	text-align: center;
+  }
+}
