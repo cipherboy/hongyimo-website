@@ -23,3 +23,9 @@ footer > div > a.dn {
 	text-align: center;
   }
 }
+
+@media screen and (min-width: 60em) {
+  main.pb7 > article.tc-l {
+	text-align: justify !important;
+  }
+}
